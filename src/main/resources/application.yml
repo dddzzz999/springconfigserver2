@@ -7,7 +7,14 @@ spring:
       server:
         git:
           uri: https://github.com/dddzzz999/springconfigserver2_config
-          #username
-          #password
+          #username: uname
+          #password: passwd
           search-paths:
-          - 'station*'
+            - 'station*'
+          repos:
+            perf:
+              pattern:
+                - "*/perf"
+              uri: https://github.com/dddzzz999/springconfigserver2_config_perf
+              search-paths:
+                - 'station*'
